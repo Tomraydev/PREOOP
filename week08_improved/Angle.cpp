@@ -7,9 +7,6 @@ using namespace std;
 Angle::Angle(double r_val){
     //cout << "    passed r_val = " << r_val << endl;
     r_val = r_val - floor(r_val/(2*M_PI)) * 2*M_PI;
-    if (r_val < 0){
-        r_val = 2*M_PI + r_val;
-    }
     ang = r_val;
     //cout << "    r_val = " << r_val << endl;
 }
