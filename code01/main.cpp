@@ -2,6 +2,6 @@
 #include "printer.hpp"
 
 int main(){
-    printer();
+    printer()
     return 0;
 }

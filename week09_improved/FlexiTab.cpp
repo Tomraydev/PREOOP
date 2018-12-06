@@ -8,7 +8,7 @@ int FlexiTab::getStart(){
 int FlexiTab::getEnd(){
     return end;
 }
-double *FlexiTab::getA(){
+double* FlexiTab::getA(){
     return A;
 }
 
