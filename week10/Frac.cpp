@@ -32,7 +32,7 @@ void Frac::setCnvPrecision(int p){
     Frac::precision = p;
 }
 
-Frac Frac::add(Frac f2)const{ 
+Frac Frac::add(const Frac& f2)const{ 
     int tmp_l = ( l * f2.m) + (f2.l * m);
     int tmp_m = m * f2.m;
     return {tmp_l, tmp_m};

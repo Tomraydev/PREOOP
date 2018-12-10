@@ -14,5 +14,5 @@ class Frac {
         void print(std::string)const; // print out the fraction. Takes a string as description
 
         static void setCnvPrecision(int); // set precision for all future instances
-        Frac add(Frac)const; // add two fractions together (no simplify)
+        Frac add(const Frac&)const; // add two fractions together (no simplify)
 };
