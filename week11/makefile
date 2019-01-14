@@ -1,0 +1,28 @@
+CXX = g++
+CXXFLAGS = -Wall -g -pedantic
+NAME = out
+OBJS = vtest.o FVec.o
+
+
+all: $(NAME)
+
+# Linking, $@ = left side :  $^ = right side, $< = first dependency
+$(NAME): $(OBJS)
+	$(CXX) $^ -o $@
+
+# Compiling source files to object files
+vtest.o: vtest.cpp FVec.h
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+FVec.o: FVec.cpp FVec.h
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# The following are commands not files
+.PHONY: all clean run
+
+clean:
+	rm *.o $(NAME)
+
+run:
+	./$(NAME)
+
