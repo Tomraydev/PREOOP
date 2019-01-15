@@ -6,7 +6,7 @@ class Arr2D {
         Arr2D(int* data_arr, int x, int y);
         ~Arr2D();
 
-        Arr2D adopt(int* data_arr, int x, int y);
+        static Arr2D adopt(int* data_arr, int x, int y);
 
         // int operator[](int x, int y);
 
