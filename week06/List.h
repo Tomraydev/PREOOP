@@ -11,7 +11,7 @@ struct List{
 };
 
 
-void prepare(List *, const List*list_2 = NULL);
+void prepare(List *, const List *list_2 = nullptr);
 
 void add(List *, int [2][2]);
 

@@ -43,7 +43,7 @@ List& List::insert(int val, int append){
     //print();
     return *this;
 }
-void List::print(){
+void List::print()const{
     cout << "[ ";
     Node *tmp = head_;
     while(tmp){

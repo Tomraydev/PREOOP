@@ -14,11 +14,12 @@
 int main() {
   List testList;
   prepare(&testList);
+  //std::cout << testList.head << std::endl;
   const List* lptr = &testList;
+  //std::cout << "empty() " << empty(lptr) << std::endl;
 
   int x[2][2] = {{2,5}, {1,5}};
   add(&testList, x);
-  
 
   int y[2][2] = {{3,2}, {4,3}};
   add(&testList, y);

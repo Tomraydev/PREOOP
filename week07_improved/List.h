@@ -9,7 +9,7 @@ class List {
         ~List();
 
         List& insert(int val, int append = List::End);
-        void print(); // Prints the list in the console
+        void print()const; // Prints the list in the console
         Node * find(int val)const; // Returns a pointer to an element with a given value or returns null
         Node *get_head() {return head_;};
 
