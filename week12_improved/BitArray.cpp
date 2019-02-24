@@ -13,7 +13,7 @@ BitArray::BitArray(int size, bool init): size_(size){
 }
 
 BitArray::~BitArray(){
-	delete [] tab_;
+	delete[] tab_;
 }
 
 void BitArray::print() const{

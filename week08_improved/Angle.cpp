@@ -7,19 +7,19 @@ using namespace std;
 Angle::Angle(double r_val){
     //cout << "    passed r_val = " << r_val << endl;
     r_val = r_val - floor(r_val/(2*M_PI)) * 2*M_PI;
-    ang = r_val;
+    ang_ = r_val;
     //cout << "    r_val = " << r_val << endl;
 }
 // Copy constructor
 Angle::Angle(const Angle& source){
-    ang = source.ang;
+    ang_ = source.ang_;
 }
 
 double Angle::toRad()const{
-    return ang;
+    return ang_;
 }
 double Angle::toDeg()const{
-    return ang/(2*M_PI) * 360.0;
+    return ang_/(2*M_PI) * 360.0;
 }
 
 Angle Angle::fromRadians(double r_val){
@@ -31,15 +31,15 @@ Angle Angle::fromDegrees(double d_val){
 }
 
 void Angle::add(const Angle& source){
-    ang = Angle(ang + source.ang).ang;
+    ang_ = Angle(ang_ + source.ang_).ang_;
 }
 //Difference in degrees
 Angle Angle::distance(const Angle& A1, const Angle& A2){
-    double diff = abs(A1.ang - A2.ang);
-    cout << "\n    diff = " << diff << endl;
+    double diff = abs(A1.ang_ - A2.ang_);
+    //cout << "\n    diff = " << diff << endl;
     if (diff > M_PI){
         diff = 2*M_PI - diff;
     }
-    cout << "\n    diff = " << diff << endl;
+    //cout << "\n    diff = " << diff << endl;
     return Angle(diff);
 }

@@ -38,7 +38,7 @@ FlexiTab::FlexiTab(const FlexiTab& S, int s, int e){
 }
 
 FlexiTab::~FlexiTab(){ 
-    delete [] A;
+    delete[] A;
 }
 
 void FlexiTab::setAll(double val){ 

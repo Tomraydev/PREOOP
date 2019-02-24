@@ -25,11 +25,9 @@ private:
 // opdowiednie modyfikacje pojedynczych bitow w BitArray.
 
 struct SingleBit{
-	
-	SingleBit(BitArray* from, int pos): from_(from), pos_(pos) {}		//podstawowy konstruktor, po prostu inicjalizuje wartosci
+	SingleBit(BitArray* from, int pos): from_(from), pos_(pos) {};		//podstawowy konstruktor, po prostu inicjalizuje wartosci
 	void operator=(bool b);												//przeladowany operator przypisania. Przypisuje b do bitu na pozycji pos_ w BitArrayu pod from_
 	operator bool();													//zwraca bit znajdujacy sie na pos_ w BitArrayu from_
-
 private:
 	BitArray* from_;				//BitArray, na ktory "wskazuje" ten SingleBit
 	int pos_;						//Pokazuje, na ktora pozycje w BitArrayu from pokazuje ten SingleBit

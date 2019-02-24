@@ -7,8 +7,6 @@ class Angle {
         Angle(double r_val); // Standard constructor
         Angle(const Angle& source); // Copy constructor
 
-        double ang; // Angle in radians from (0, 2PI)
-
         double toRad()const; // return angle in radians
         double toDeg()const; // return angle in degrees
 
@@ -17,4 +15,7 @@ class Angle {
 
         void add(const Angle&); // add an angle
         static Angle distance(const Angle&, const Angle&); // returns distance between two angles
+
+    private:
+        double ang_; // Angle in radians from (0, 2PI)
 };

@@ -1,3 +1,0 @@
-/home/tomray/Desktop/AGH/PREOOP_CODE/cmake_test/build/CMakeFiles/rebuild_cache.dir
-/home/tomray/Desktop/AGH/PREOOP_CODE/cmake_test/build/CMakeFiles/pesel_test.dir
-/home/tomray/Desktop/AGH/PREOOP_CODE/cmake_test/build/CMakeFiles/edit_cache.dir

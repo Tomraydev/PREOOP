@@ -12,7 +12,7 @@ class FVec{
     FVec& set(int i, int val); // set vec[i] to 'val' 
     void print(std::string)const; // print the vector
 
-    const FVec& operator+(int a)const; // Add a to all elements
+    const FVec& operator+(int a)const; // Add a to all elements 
     const FVec& operator+(const FVec& S)const; // Add two vectors together (value to value)
     FVec& operator=(const FVec& S); // Assign vector to vector
 };

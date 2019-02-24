@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/pesel_test.dir/src/check_pesel.cpp.o CMakeFiles/pesel_test.dir/src/ptest.cpp.o  -o pesel_test 

@@ -8,6 +8,7 @@ FVec::FVec(int n){
         vec[i] = 0;
     }
 }
+
 FVec::~FVec(){
     delete[] vec;
 }
@@ -42,7 +43,6 @@ const FVec& FVec::operator+(int a)const{
 }
 
 const FVec& FVec::operator+(const FVec& S)const {
-
     for(int i = 0; i < length; i++){
         vec[i] = vec[i] + S.vec[i];
     }
@@ -53,6 +53,7 @@ FVec& FVec::operator=(const FVec& S) {
     if (this == &S){
         return *this;
     }
+    delete[] vec;
     length = S.length;
     vec = new int[length];
     for (int i = 0; i < length; i++){

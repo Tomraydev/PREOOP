@@ -30,8 +30,7 @@ int main() {
   FVec dod = crefb+crefb;
   dod.print("2 x b ");
   b = b;
-  b.print("zyjemy jeszcze ? ");
-  
+  b.print("zyjemy jeszcze ? ");  
 }
 /* wynik
    To jest a 0 0 5 -1 0 
